@@ -1,7 +1,16 @@
-const system = ['stage_1', 'stage_1', 'stage_2', 'dragon'];
-const step = [1, 2, 12, 111];
+const system = ['Dragon',
+  'Falcon 9',
+  'Dragon',
+  'Falcon 9',
+  'Falcon 9',
+  'Dragon',
+  'Dragon',
+  'Dragon',
+  'Falcon 9'];
+const step = [1, 1, 3, 2, 4, 10, 20, 100, 4];
 
 function solution(systemNames, stepNumbers) {
+
   const length = systemNames.length;
   const objMap = {};
   for (var i = 0; i < length; i++) {
@@ -19,7 +28,6 @@ function solution(systemNames, stepNumbers) {
           return false;
         }
       }
-      return true;
     }
   }
   return true;
